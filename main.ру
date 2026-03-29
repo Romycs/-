@@ -1,5 +1,3 @@
-# -
-Нефритовый дворец 
 import logging
 import os
 from aiogram import Bot, Dispatcher, types
@@ -15,7 +13,7 @@ dp = Dispatcher(bot)
 
 @dp.message_handler(commands=['start'])
 async def start(msg: types.Message):
-    await msg.answer("Отправь ссылку 🎬")
+    await msg.answer("Отправь ссылку с YouTube или TikTok 🎬")
 
 @dp.message_handler()
 async def download(msg: types.Message):
